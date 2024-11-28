@@ -1,0 +1,30 @@
+1. Create Application
+
+ng new GitHubAngularTypescriptMainApp --no-standalone --routing --ssr=false --style=scss
+
+2. Add Angular Material to Application
+
+ng add @angular/material
+
+Choose a prebuilt theme name, or "custom" for a custom theme: Pink/Blue Grey     
+[ Preview: https://material.angular.io?theme=pink-bluegrey ]
+? Set up global Angular Material typography styles? yes
+? Include the Angular animations module? Include, but disable animations
+
+3.
+
+ng generate module Book --routing
+ng generate component book/list/BookList --flat
+ng generate component book/edit/BookEdit --flat
+ng generate service book/service/BookService
+
+ng generate module Person --routing
+ng generate component person/list/PersonList --flat
+ng generate component person/edit/PersonEdit --flat
+ng generate service person/service/PersonService
+
+ng generate module Home --routing
+ng generate component home/Home --flat
+
+4. 
+npm i githubnodejstypescriptprinciplelibrary --save

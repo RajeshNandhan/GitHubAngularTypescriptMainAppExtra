@@ -1,0 +1,85 @@
+<div class="container" *ngIf="selectedBook">
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <tbody>
+          <tr>
+            <td>
+              <span>Book Id</span>
+            </td>
+            <td>
+              <span>{{selectedBook.bookId}}</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <span>Book Category</span>
+            </td>
+            <td>
+              <input type="text" class="form-control" [(ngModel)]="selectedBook.bookCategory">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <span>Book Name</span>
+            </td>
+            <td>
+              <input type="text" class="form-control" [(ngModel)]="selectedBook.bookName">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <span>Edition</span>
+            </td>
+            <td>
+              <input type="text" class="form-control" [(ngModel)]="selectedBook.edition">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <span>Image</span>
+            </td>
+            <td>
+              <input type="text" class="form-control" [(ngModel)]="selectedBook.image">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <span>Price</span>
+            </td>
+            <td>
+              <input type="text" class="form-control" [(ngModel)]="selectedBook.price">
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <button class="edit" title="Save" (click)="saveBook()">Save</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <button class="edit" title="Save" (click)="deleteBook()">Delete</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <button class="edit" title="Save" (click)="cancel()">Cancel</button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <span style="color: red;">{{pageError}}</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+

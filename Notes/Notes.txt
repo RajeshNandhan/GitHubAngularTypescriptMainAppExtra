@@ -26,5 +26,14 @@ ng generate service person/service/PersonService
 ng generate module Home --routing
 ng generate component home/Home --flat
 
+ng generate module shared/components/Footer
+ng generate component shared/components/Footer/Footer --flat
+
+ng generate module shared/components/Navigation
+ng generate component shared/components/Navigation/Navigation --flat
+
+ng generate module shared/components/Search
+ng generate component shared/components/Search/Search --flat
+
 4. 
 npm i githubnodejstypescriptprinciplelibrary --save

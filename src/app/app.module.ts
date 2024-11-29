@@ -5,7 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module'
 import { provideHttpClient } from '@angular/common/http';
-import { SiteheaderModule } from './shared/components/header/header.module';
+import { HeaderModule } from './shared/components/header/header.module';
+import { FooterModule } from './shared/components/footer/footer.module';
+import { NavigationModule } from './shared/components/navigation/navigation.module';
+import { SearchModule } from './shared/components/search/search.module';
 
 /*provideHttpClient - HttpClientModule*/
 @NgModule({
@@ -16,7 +19,10 @@ import { SiteheaderModule } from './shared/components/header/header.module';
     BrowserModule,
     AppRoutingModule,
     HomeModule,
-    SiteheaderModule
+    HeaderModule,
+    FooterModule,
+    NavigationModule,
+    SearchModule
   ],
   providers: [provideHttpClient()],
   bootstrap: [AppComponent]

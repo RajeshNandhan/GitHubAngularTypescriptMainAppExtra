@@ -1,11 +1,12 @@
-<div class="container" *ngIf="persons">
-    <div class="table-responsive">
-      <table class="table">
+<div *ngIf="persons">
+  
+    <div>
+      <table>
         <thead>
           <tr>
-            <th colspan="5">
-              <a [routerLink]="['/person/edit/']">
-                <span class="glyphicon glyphicon-cog"></span>Add</a>
+            <th  style="text-align: left;" colspan="5">
+              <app-search></app-search>
+              <a style="color: green;" [routerLink]="['/person/edit/']">Add Person</a>
             </th>
           </tr>
           <tr>

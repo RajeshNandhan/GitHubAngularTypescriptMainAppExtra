@@ -1,11 +1,11 @@
-<div class="container" *ngIf="books">
-    <div class="table-responsive">
-      <table class="table">
+<div *ngIf="books">
+    <div>
+      <table>
         <thead>
           <tr>
-            <th colspan="5">
-              <a [routerLink]="['/book/edit/']">
-                <span class="glyphicon glyphicon-cog"></span>Add</a>
+            <app-search></app-search>
+            <th style="text-align: left;" colspan="5">
+              <a style="color: green;" [routerLink]="['/book/edit/']">Add Book</a>
             </th>
           </tr>
           <tr>
@@ -37,7 +37,7 @@
             </td>
             <td>
               <a [routerLink]="['/book/edit/', book.bookId]">
-                <span class="glyphicon glyphicon-cog"></span>Details</a>
+                <span></span>Details</a>
             </td>
           </tr>
         </tbody>

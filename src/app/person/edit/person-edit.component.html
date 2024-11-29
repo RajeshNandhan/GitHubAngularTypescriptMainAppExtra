@@ -1,7 +1,7 @@
 
-<div class="container" *ngIf="selectedPerson">
-    <div class="table-responsive">
-      <table class="table table-bordered">
+<div class="personEditForm" *ngIf="selectedPerson">
+    <div>
+      <table>
         <tbody>
           <tr>
             <td>
@@ -17,7 +17,7 @@
               <span>First Name</span>
             </td>
             <td>
-              <input type="text" class="form-control" [(ngModel)]="selectedPerson.firstName">
+              <input type="text" [(ngModel)]="selectedPerson.firstName">
             </td>
           </tr>
 
@@ -26,7 +26,7 @@
               <span>Last Name</span>
             </td>
             <td>
-              <input type="text" class="form-control" [(ngModel)]="selectedPerson.lastName">
+              <input type="text" [(ngModel)]="selectedPerson.lastName">
             </td>
           </tr>
 
@@ -35,7 +35,7 @@
               <span>Rating</span>
             </td>
             <td>
-              <input type="text" class="form-control" [(ngModel)]="selectedPerson.rank">
+              <input type="text" [(ngModel)]="selectedPerson.rank">
             </td>
           </tr>
 
@@ -44,7 +44,7 @@
               <span>Category</span>
             </td>
             <td>
-              <input type="text" class="form-control" [(ngModel)]="selectedPerson.category">
+              <input type="text" [(ngModel)]="selectedPerson.category">
             </td>
           </tr>
 
@@ -62,25 +62,25 @@
               <span>Play Cricketer?</span>
             </td>
             <td>
-              <input type="text" class="form-control" [(ngModel)]="selectedPerson.isPlayCricket">
+              <input type="text" [(ngModel)]="selectedPerson.isPlayCricket">
             </td>
           </tr>
 
           <tr>
             <td colspan="2">
-              <button class="edit" title="Save" (click)="savePerson()">Save</button>
+              <button title="Save" (click)="savePerson()">Save</button>
             </td>
           </tr>
 
           <tr>
             <td colspan="2">
-              <button class="edit" title="Save" (click)="deletePerson()">Delete</button>
+              <button title="Save" (click)="deletePerson()">Delete</button>
             </td>
           </tr>
 
           <tr>
             <td colspan="2">
-              <button class="edit" title="Save" (click)="cancel()">Cancel</button>
+              <button title="Save" (click)="cancel()">Cancel</button>
             </td>
           </tr>
           <tr>

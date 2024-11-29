@@ -1,6 +1,5 @@
-<div class="container" *ngIf="selectedBook">
-    <div class="table-responsive">
-      <table class="table table-bordered">
+<div class="bookEditForm" *ngIf="selectedBook">
+      <table>
         <tbody>
           <tr>
             <td>
@@ -16,7 +15,7 @@
               <span>Book Category</span>
             </td>
             <td>
-              <input type="text" class="form-control" [(ngModel)]="selectedBook.bookCategory">
+              <input type="text" [(ngModel)]="selectedBook.bookCategory">
             </td>
           </tr>
 
@@ -25,7 +24,7 @@
               <span>Book Name</span>
             </td>
             <td>
-              <input type="text" class="form-control" [(ngModel)]="selectedBook.bookName">
+              <input type="text" [(ngModel)]="selectedBook.bookName">
             </td>
           </tr>
 
@@ -34,7 +33,7 @@
               <span>Edition</span>
             </td>
             <td>
-              <input type="text" class="form-control" [(ngModel)]="selectedBook.edition">
+              <input type="text" [(ngModel)]="selectedBook.edition">
             </td>
           </tr>
 
@@ -43,7 +42,7 @@
               <span>Image</span>
             </td>
             <td>
-              <input type="text" class="form-control" [(ngModel)]="selectedBook.image">
+              <input type="text" [(ngModel)]="selectedBook.image">
             </td>
           </tr>
 
@@ -52,25 +51,25 @@
               <span>Price</span>
             </td>
             <td>
-              <input type="text" class="form-control" [(ngModel)]="selectedBook.price">
+              <input type="text" [(ngModel)]="selectedBook.price">
             </td>
           </tr>
 
           <tr>
             <td colspan="2">
-              <button class="edit" title="Save" (click)="saveBook()">Save</button>
+              <button title="Save" (click)="saveBook()">Save</button>
             </td>
           </tr>
 
           <tr>
             <td colspan="2">
-              <button class="edit" title="Save" (click)="deleteBook()">Delete</button>
+              <button title="Save" (click)="deleteBook()">Delete</button>
             </td>
           </tr>
 
           <tr>
             <td colspan="2">
-              <button class="edit" title="Save" (click)="cancel()">Cancel</button>
+              <button title="Save" (click)="cancel()">Cancel</button>
             </td>
           </tr>
           <tr>
@@ -80,6 +79,5 @@
           </tr>
         </tbody>
       </table>
-    </div>
   </div>
 

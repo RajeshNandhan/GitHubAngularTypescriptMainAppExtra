@@ -5,6 +5,7 @@ import { PersonRoutingModule } from './person-routing.module';
 import { PersonListComponent } from './list/person-list.component';
 import { PersonEditComponent } from './edit/person-edit.component';
 import { FormsModule } from '@angular/forms';
+import { SearchModule } from "../shared/components/search/search.module";
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     PersonRoutingModule,
     FormsModule,
-  ]
+    SearchModule
+]
 })
 export class PersonModule { }

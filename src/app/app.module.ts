@@ -24,7 +24,7 @@ import { SearchModule } from './shared/components/search/search.module';
     NavigationModule,
     SearchModule
   ],
-  providers: [provideHttpClient()],
+  providers: [provideHttpClient(),],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

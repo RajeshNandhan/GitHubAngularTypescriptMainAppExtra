@@ -1,5 +1,5 @@
-
 <div class="personEditForm" *ngIf="selectedPerson">
+  <form [formGroup]="personEditForm">
     <div>
       <table>
         <tbody>
@@ -8,7 +8,7 @@
               <span>Person Id</span>
             </td>
             <td>
-              <span>{{selectedPerson.personId}}</span>
+              <span>{{ selectedPerson.personId }}</span>
             </td>
           </tr>
 
@@ -17,7 +17,8 @@
               <span>First Name</span>
             </td>
             <td>
-              <input type="text" [(ngModel)]="selectedPerson.firstName">
+              <!-- <input type="text" [(ngModel)]="selectedPerson.firstName" /> -->
+              <input type="text" formControlName="firstNameField" />
             </td>
           </tr>
 
@@ -26,7 +27,8 @@
               <span>Last Name</span>
             </td>
             <td>
-              <input type="text" [(ngModel)]="selectedPerson.lastName">
+              <!-- <input type="text" [(ngModel)]="selectedPerson.lastName" /> -->
+              <input type="text" formControlName="lastNameField" />
             </td>
           </tr>
 
@@ -35,7 +37,8 @@
               <span>Rating</span>
             </td>
             <td>
-              <input type="text" [(ngModel)]="selectedPerson.rank">
+              <!-- <input type="text" [(ngModel)]="selectedPerson.rank" /> -->
+              <input type="text" formControlName="rankField" />
             </td>
           </tr>
 
@@ -44,7 +47,8 @@
               <span>Category</span>
             </td>
             <td>
-              <input type="text" [(ngModel)]="selectedPerson.category">
+              <!-- <input type="text" [(ngModel)]="selectedPerson.category" /> -->
+              <input type="text" formControlName="categoryField" />
             </td>
           </tr>
 
@@ -53,7 +57,8 @@
               <span>Date Of Birth</span>
             </td>
             <td>
-              <span>{{selectedPerson.dateOfBirth}}</span>
+              <!-- <span>{{ selectedPerson.dateOfBirth }}</span> -->
+              <input type="date" formControlName="dateOfBirthField"/>
             </td>
           </tr>
 
@@ -62,7 +67,8 @@
               <span>Play Cricketer?</span>
             </td>
             <td>
-              <input type="text" [(ngModel)]="selectedPerson.isPlayCricket">
+              <!-- <input type="text" [(ngModel)]="selectedPerson.isPlayCricket" /> -->
+              <input type="checkbox" formControlName="isPlayCricketField" />
             </td>
           </tr>
 
@@ -85,10 +91,11 @@
           </tr>
           <tr>
             <td colspan="2">
-              <span style="color: red;">{{pageError}}</span>
+              <span style="color: red">{{ pageError }}</span>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
-  </div>
+  </form>
+</div>

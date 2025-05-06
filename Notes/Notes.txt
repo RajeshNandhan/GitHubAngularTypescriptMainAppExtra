@@ -37,3 +37,6 @@ ng generate component shared/components/Search/Search --flat
 
 4. 
 npm i githubnodejstypescriptprinciplelibrary --save
+
+9.
+npm i date-fns
